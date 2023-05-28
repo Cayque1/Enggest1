@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Incluir Cliente" />
+
+        <!-- Campo para inserir o cliente -->
+        <EditText
+            android:id="@+id/editTextCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cliente" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Número de Série" />
+
+        <!-- Campo para inserir o número de série -->
+        <EditText
+            android:id="@+id/editTextNumeroSerie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Número de Série" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Patrimônio do Equipamento" />
+
+        <!-- Campo para inserir o patrimônio do equipamento -->
+        <EditText
+            android:id="@+id/editTextPatrimonio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Patrimônio do Equipamento" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reclamação" />
+
+        <!-- Campo para inserir a reclamação -->
+        <EditText
+            android:id="@+id/editTextReclamacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Reclamação"
+            android:minLines="3"
+            android:maxLines="5"
+            android:scrollbars="vertical" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Serviço Realizado" />
+
+        <!-- Campo para inserir o serviço realizado -->
+        <EditText
+            android:id="@+id/editTextServicoRealizado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Serviço Realizado"
+            android:minLines="3"
+            android:maxLines="5"
+            android:scrollbars="vertical" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data e Hora" />
+
+        <!-- Campo para inserir a data e hora -->
+        <EditText
+            android:id="@+id/editTextDataHora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Data e Hora" />
+
+        <!-- Botão para enviar a OS -->
+        <Button
+            android:id="@+id/buttonEnviarOS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar"
+            android:backgroundTint="#000000" />
+
+        <EditText
+            android:id="@+id/editTextPesquisa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pesquisar ordens de serviço anteriores" />
+
+        <Button
+            android:id="@+id/buttonPesquisar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextPesquisa"
+            android:layout_centerHorizontal="true"
+            android:text="Pesquisar"
+            android:backgroundTint="#000000" />
+
+
+
+    </LinearLayout>
+</ScrollView>

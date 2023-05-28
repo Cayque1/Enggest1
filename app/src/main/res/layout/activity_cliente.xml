@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Campo para adicionar novos clientes -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adicionar Novo Cliente" />
+
+    <EditText
+        android:id="@+id/editTextNomeCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome do Cliente" />
+
+    <EditText
+        android:id="@+id/editTextEndereco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Endereço" />
+
+    <EditText
+        android:id="@+id/editTextResponsavel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Responsável" />
+
+    <EditText
+        android:id="@+id/editTextBase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Base" />
+
+    <Button
+        android:id="@+id/buttonAdicionarCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#000000"
+        android:text="Adicionar Cliente" />
+
+    <!-- Lista rolante com todos os clientes -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lista de Clientes" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutClientes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Os itens da lista de clientes serão adicionados dinamicamente aqui -->
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
